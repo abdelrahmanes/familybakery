@@ -2,7 +2,7 @@
 $(window).scroll(function(){
     let scrollT = $('body,html').scrollTop();
     if(scrollT > 200){
-        $('#nav').css('backgroundColor', '#fff').css('padding','0')
+        $('#nav').css('backgroundColor', '#fff').css('padding','0').removeClass('navbar-dark').addClass('navbar-light')
         $('#logo').attr('src','./images/bakery-color.png').css('padding','5px 10px')
         $('.nav-link').css('color','#000').css('padding',"3px")
         $('.navbar-nav').css('padding','0 10px')
