@@ -1,0 +1,442 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Alegreya';
+
+}
+
+.row{
+    margin-right: 0;
+    margin-left: 0;
+}
+
+/* ============= Start Header ====================== */
+    /* ======== N A V B A R ========= */
+
+#btn-up{
+    font-size:40px;
+    background-color: rgba(0,0,0,0.6);
+    color:rgb(255, 255, 255);
+    border-radius: 50%;
+    position:fixed;
+    z-index:9999999999;
+    bottom:20px;
+    right:20px;
+    cursor: pointer;
+    transition: backgroundColor color 2s;
+    display: none;
+}
+#btn-up:hover{
+    background-color: #000;
+    color:#e0c690;
+}
+.home {
+    background-image: url(../images/drew-coffman-1872.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.navbar{
+    z-index: 10;
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+}
+.nav-link{
+    text-decoration: none;
+    color:#fff;
+    font-size: 1.2rem;
+    font-family: 'Alegreya';
+    padding:1rem !important;
+    transition:color .5s;
+}
+
+.nav-link:hover{
+    color:#e0c690 !important;
+}
+
+.dropdown-menu{
+    background-color:rgba(67,62,55,0.95);
+}
+.dropdown-item {
+    color:rgb(197, 196, 196);
+    font-family: 'Alegreya';
+    transition: font-size .5s;
+}
+.dropdown-item:hover{
+    color:white;
+    font-weight:normal;
+    background-color: #e0c690;
+    font-size: large;
+}
+
+
+
+/* ======== C A P T I O N ============= */
+
+.home .caption{
+    padding-top: 10rem;
+}
+.home .caption p{
+    font-family: 'Alegreya Sans';
+
+    font-size: 1.5rem;
+}
+.brand-name{
+    font-size: 5rem;
+}
+.btn{
+    padding: 15px 28px;
+    color:#fff;
+    font-family: 'Alegreya Sans';
+    font-weight:bold;
+}
+.btn-1{
+    background-color: #8e7754;
+    border: 2px solid transparent;
+
+}
+.btn-1:hover{
+    background-color: #fff;
+    color:#000;
+}
+.btn-2{
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+.btn-2:hover{
+    background-color: #fff;
+    color:#000;
+}
+ /* ======== S I D E   B A R ========== */
+.side-panel{
+    width: 0px;
+    top:0;
+    right:0;
+    background-color: #fff;
+    z-index: 99999999;
+}
+#side-panel .btn{
+    background-color: #8e7754;
+}
+.open-panel{
+    left: -42px;
+    top: 200px;
+    width: 42px;
+    height: 86px;
+    z-index: -1;
+    background-color: #fff;
+    border-top-left-radius:5px ;
+    border-bottom-left-radius:5px ;
+
+}
+.open-panel i:hover{
+    color: #218fe6 !important
+}
+.open-panel .fas{
+    color:grey;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight:bold;
+}
+.content-panel{
+    background-color: #fff;
+    /* border:1px solid slategray; */
+    border-radius: 5px;
+    padding: 4px 7px;
+    margin:0 10%;
+    width:80%;
+}
+
+.color-box{
+    margin-right: 3px;
+    width:20px;
+    height:20px;
+    border-radius: 2px;
+    cursor:pointer;
+    /* float:left; */
+    display:inline-block;
+}
+ 
+
+/* ======== S C R O L L   I C O N ========== */
+.scroll-icon {
+    width:30px;
+    height:50px;
+    background-color: #fff;
+    position: absolute;
+    left: 49%;
+    bottom: 20px;
+    border:solid #fff 2px;
+    background-color: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.scroll-icon::after{
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  width:.5em;
+  height: .5em;
+  border-radius: 50%;
+  top: 1.3em;
+  left: 9px;
+  -webkit-animation: scroll 1.5s linear infinite;
+	-moz-animation: scroll 1.5s linear infinite;
+	animation: scroll 1.5s linear infinite;
+}
+
+@-webkit-keyframes scroll {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+@-moz-keyframes scroll {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+@keyframes scroll {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+
+
+/* =======================================  W H O - W E - A R E    S E C T I O N  =========================================================*/
+.item img{
+    border-radius: 5px;
+}
+
+.who-title{
+    color: #303030;
+    line-height: 1.38em;
+    font-size: 2rem;
+}
+.our-story{
+    font-size:1.1rem;
+    color: #686868;
+    line-height: 1.86em;
+    font-family: "Alegreya Sans";
+    font-size: 17px;
+}
+
+.icons span{
+    font-family: "Alegreya Sans";
+    font-size: 17px;
+    line-height: 1.86em;
+    font-weight: 400;
+    color: #686868;
+}
+
+.icons i{
+    color: #8e7754;
+    font-size: 22px;
+    position:relative;
+}
+.users i{
+    font-size:18px;
+}
+
+.icons i::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -10px;
+    left: -11px;
+    background-color: transparent;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+}
+
+/* =======================================  O U R - L O C A T I O N    S E C T I O N  =========================================================*/
+.diff-bg{
+    background-color: #f8f8f8;
+}
+/* =======================================  O U R - B A K I N G    S E C T I O N  =========================================================*/
+.baking-title{
+    font-family: "Alegreya";
+    font-size: 30px;
+    color: #303030;
+    line-height: 1.38em;
+}
+
+.baking-details{
+    font-size: 17px;
+    color: #888;
+    /* max-width: 720px; */
+    line-height: 1.86em;
+    margin: 17px auto 0;
+}
+
+.item-caption h4{
+    font-size: 22px;    
+    color: #303030;
+    line-height: 1.38em;
+}
+
+.item-caption p{
+    line-height: 1.86em;
+    font-family: "Alegreya Sans";
+    font-size: 17px;
+    color: #686868;
+}
+
+.contact-details{
+    font-size:1rem;
+}
+
+.contact .icons .fas {
+    position: relative;
+    /* color:#fff; */
+}
+.contact .icons .fas::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -10px;
+    left: -11px;
+    /* background-color: #8e7754; */
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+}
+
+.contact .icons .map i{
+    font-size:19px;
+}
+
+/* =======================================  F O O T E R  =========================================================*/
+
+footer{
+    background-color: #403d38;;
+}
+
+.list-title{
+    color:#fff;
+}
+.list {
+    margin: 2px;
+}
+.list p{
+    color:#969696;
+    line-height: 1.86em;
+}
+
+ul{
+    padding:0 !important;
+}
+.list .arrow li, .list ul {
+    list-style: none;
+}
+ul li{
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    color:#969696;
+    margin-bottom: 6px;
+    padding-bottom: 7px;
+    line-height: 1.86em;
+}
+.arrow li {
+    position: relative;
+    /* padding-bottom: 10px; */
+   
+    margin-left:15px;
+}
+.list .arrow li:before{
+    content: '';
+    position: absolute;
+    border-right:2px solid #969696;;
+    border-bottom:2px solid #969696;;
+    width:6px;
+    height:6px;
+    top: calc(50% - 4px);
+    left: -15px;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.footer-bottom{
+    background-color: #353330;
+}
+/* .social-icons a{
+    width: 40px;
+    height: 40px;
+} */
+.footer-bottom p{
+    color:#777;
+}
+.social i{
+    background-color: #484540;
+    border-radius: 50%;
+    color:#8c8a86;
+    font-size:20px;
+    margin-right: 10px;
+    width:40px;
+    height:40px;
+    padding: 10px 0;
+}
+
+.icon-facebook i:hover{
+    background-color: #3b5998 !important;
+    color:#fff;
+}
+
+.icon-google-plus i:hover{
+    background-color: #dd4b39 !important;
+    color:#fff;
+}
+
+.icon-linkedin i:hover{
+    background-color: #007bb5  !important;
+    color:#fff;
+}
+
+.icon-twitter i:hover{
+    background-color: #00aced   !important;
+    color:#fff;
+}
